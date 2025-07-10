@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  x:Class="eProdavnica.Pages.ProfilPage"
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  Title="Profil"
+  BackgroundColor="#F0F0F0">
+
+    <Grid RowDefinitions="220, *">
+        <!-- 1) Full-width header image -->
+        <Image
+      Grid.Row="0"
+      Source="samedin.jpg"
+      Aspect="AspectFill" />
+
+        <!-- 2) White overlapping card -->
+        <Frame
+      Grid.Row="1"
+      BackgroundColor="White"
+      CornerRadius="30"
+      Margin="0,-30,0,0"
+      HasShadow="True">
+
+            <VerticalStackLayout
+        Padding="20"
+        Spacing="16">
+
+                <!-- Name & Location -->
+                <VerticalStackLayout Spacing="2">
+                    <Label
+            Text="Samedin Tutnjić"
+            FontSize="24"
+            FontAttributes="Bold" />
+                    <Label
+            Text="Zenica"
+            FontSize="14"
+            TextColor="Gray" />
+                </VerticalStackLayout>
+
+                <!-- Additional profile fields -->
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Email:" FontAttributes="Bold" />
+                    <Label Text="samedin.tutnjice@hotmail.com" />
+
+                    <Label Text="Telefon:" FontAttributes="Bold" />
+                    <Label Text="+387 123456" />
+
+                    <Label Text="Bio:" FontAttributes="Bold" />
+                    <Label Text="Photographer • Traveler • Coffee addict" />
+
+                    <Label Text="Pridruzio se:" FontAttributes="Bold" />
+                    <Label Text="January 2020" />
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

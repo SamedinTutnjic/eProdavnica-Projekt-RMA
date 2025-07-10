@@ -1,15 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Shell
     x:Class="eProdavnica.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:eProdavnica"
+    xmlns:pages="clr-namespace:eProdavnica.Pages"
     Shell.FlyoutBehavior="Flyout"
     Title="eProdavnica">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!-- HOME -->
+    <FlyoutItem Title="Home" Icon="home.png">
+        <ShellContent
+      ContentTemplate="{DataTemplate local:MainPage}"
+      Route="MainPage" />
+    </FlyoutItem>
+
+    <!-- PROFIL -->
+    <FlyoutItem Title="Profil" Icon="person.png">
+        <ShellContent
+      ContentTemplate="{DataTemplate pages:ProfilPage}"
+      Route="ProfilPage" />
+    </FlyoutItem>
 
 </Shell>
