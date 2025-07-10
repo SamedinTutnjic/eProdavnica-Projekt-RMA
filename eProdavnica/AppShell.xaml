@@ -22,4 +22,13 @@
       Route="ProfilPage" />
     </FlyoutItem>
 
+    <!-- Bookmark -->
+    <FlyoutItem Title="Bookmark" Icon="bookmark.png">
+        <ShellContent
+    Title="Bookmark"
+    ContentTemplate="{DataTemplate pages:BookmarkPage}"
+    Route="bookmark" />
+    </FlyoutItem>
+
+
 </Shell>
